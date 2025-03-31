@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from read_data import load_data
 
-df = load_data("data/supahcoolsoft.csv")
+df = load_data("Executive_Dashboard/data/supahcoolsoft.csv")
 
 def layout():
 #===== Dashboard headline ======
