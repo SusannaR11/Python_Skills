@@ -3,6 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from read_data import load_data
 from charts import employees_by_department_bar
+from charts import salary_histogram
 
 df = load_data("Executive_Dashboard/data/supahcoolsoft.csv")
 
@@ -24,7 +25,9 @@ def layout():
     st.markdown("### Number of Employees by Department")
     employees_by_department_bar()
 
-
+#-----Histogram of Salary Distribution------------
+    st.markdown("### Salary Distribution")
+    salary_histogram()
 
 #-----KPI
     st.markdown("### KPIs from employee data")

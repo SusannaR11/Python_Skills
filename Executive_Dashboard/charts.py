@@ -17,6 +17,16 @@ def employees_by_department_bar():
     
     st.bar_chart(df, x = "Department", y = "Employee_Count")
 
-def salary_histogram
+def salary_histogram():
+    
+    df = load_data("Executive_Dashboard/data/supahcoolsoft.csv")
+    fig, ax = plt.subplots()
+    ax.hist(df["Salary_SEK"], bins=10, edgecolor='white')
+    ax.set_xlabel("Salary (SEK)")
+    ax.set_ylabel("Number of Employees")
+    ax.set_title("Salary Distribution")
+    st.pyplot(fig)
+
+
 
 
